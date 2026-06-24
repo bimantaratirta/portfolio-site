@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Project — the work</title>
+<meta name="description" content="Project case study — the challenge, what I built, and the highlights." />
+<meta name="color-scheme" content="light dark" />
+<script>(function(){try{var q=new URLSearchParams(location.search).get('theme');var t=q||localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');document.documentElement.dataset.theme=t;}catch(e){document.documentElement.dataset.theme='light';}})();</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500;1,9..144,600&family=Schibsted+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="scrollbar" aria-hidden="true"><span id="scrollProgress"></span></div>
+
+<header class="nav" id="nav">
+  <div class="wrap nav__inner">
+    <a href="index.html" class="brand" aria-label="Home">
+      <span class="brand__mark"></span>
+      <span class="brand__txt">the&nbsp;work<sup>®</sup></span>
+    </a>
+    <nav class="nav__links" aria-label="Sections">
+      <a href="index.html#featured">Case studies</a>
+      <a href="index.html#work">All work</a>
+      <a href="index.html#build">What I build</a>
+      <a href="index.html#about">About</a>
+    </nav>
+    <button class="themebtn" id="themeBtn" aria-label="Toggle dark mode" aria-pressed="false">
+      <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M19.1 4.9l-1.8 1.8M6.7 17.3l-1.8 1.8"/></svg>
+      <svg class="moon" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+    </button>
+    <a href="index.html#contact" class="btn btn--dark nav__cta">Start a project</a>
+  </div>
+</header>
+
+<main class="pdetail" id="pmain">
+  <div class="wrap"><p id="pfallback" style="padding:40px 0;color:var(--ink-soft)">Loading project…</p></div>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__inner">
+    <span class="foot__mark">the work<sup>®</sup></span>
+    <span>Freelance software developer — web, mobile &amp; AI</span>
+    <span class="foot__meta">© <span id="year"></span></span>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="theme.js"></script>
+<script src="project.js"></script>
+</body>
+</html>
